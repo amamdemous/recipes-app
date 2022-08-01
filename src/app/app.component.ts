@@ -10,6 +10,5 @@ export class AppComponent {
 
   handleNav(route: string) {
     this.route = route;
-    console.log(route);
   }
 }
