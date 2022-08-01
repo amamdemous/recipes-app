@@ -12,6 +12,7 @@
       <app-recipe-item
         *ngFor="let recipe of recipes"
         [recipe]="recipe"
+        (onChosenEvent)="recipeSelected(recipe)"
       ></app-recipe-item>
     </ul>
   </div>
