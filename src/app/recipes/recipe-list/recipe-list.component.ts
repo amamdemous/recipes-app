@@ -14,6 +14,12 @@ export class RecipeListComponent implements OnInit {
       'Tasty rice',
       'https://images.immediate.co.uk/production/volatile/sites/30/2013/05/Puttanesca-fd5810c.jpg'
     ),
+    
+    new Recipe(
+      'Apple',
+      'Salad',
+      'https://media.istockphoto.com/photos/red-apple-picture-id184276818?k=20&m=184276818&s=612x612&w=0&h=QxOcueqAUVTdiJ7DVoCu-BkNCIuwliPEgtAQhgvBA_g='
+    ),
   ];
   ngOnInit(): void {}
 }
