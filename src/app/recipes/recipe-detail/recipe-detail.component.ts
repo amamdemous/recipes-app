@@ -11,5 +11,5 @@ export class RecipeDetailComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  @Input() recipe: Recipe = { name: '', description: '', imagePath: '' };
+  @Input() recipe!: Recipe;
 }
