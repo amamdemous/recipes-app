@@ -1,10 +1,8 @@
-<app-header (headerNavEvent)="handleNav($event)"></app-header>
+<app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes *ngIf="route === 'recipes'"></app-recipes>
-      <app-shopping-list *ngIf="route === 'shopping_list'"></app-shopping-list>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
-<router-outlet></router-outlet>
