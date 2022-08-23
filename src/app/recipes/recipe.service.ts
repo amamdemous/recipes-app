@@ -11,7 +11,7 @@ export class RecipeService {
   constructor(private shoppingListService: ShoppingListService) {}
   recipeChanged = new Subject<Recipe[]>();
 
-  private recipes: Recipe[] = [
+  /*  private recipes: Recipe[] = [
     new Recipe(
       'A Test recipe',
       'Tasty rice',
@@ -24,7 +24,14 @@ export class RecipeService {
       'https://media.istockphoto.com/photos/red-apple-picture-id184276818?k=20&m=184276818&s=612x612&w=0&h=QxOcueqAUVTdiJ7DVoCu-BkNCIuwliPEgtAQhgvBA_g=',
       [new Ingredient('Apple', 200)]
     ),
-  ];
+  ]; */
+
+  private recipes: Recipe[] = [];
+
+  setRecipes(recipes: Recipe[]) {
+    this.recipes = recipes;
+    this.recipeChanged.next(this.recipes.slice());
+  }
 
   getRecipes() {
     return this.recipes.slice();
