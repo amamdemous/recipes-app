@@ -1,4 +1,7 @@
-# RecipesApp
+# Recipes app
+Course project for Maximilian Schwarzmuller's angular course
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
